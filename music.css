@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --purp500: #281154;
+    --purp300: #270082;
+    --purp200: #1b0058;
+    --red100: #281154;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+
+}
+
+.container ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: var(--purp300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+.hero_section {
+    background-image: url(mus.jpg);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+
+.hero_section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.hero_section h1 {
+    font-size: 93px;
+}
+
+.hero_section h3 {
+    font-size: 32px;
+}
+
+.music_sec {
+    padding-top: 50px;
+    background: var(--purp500);
+    color: white;
+}
+
+.music_sec .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ipad {
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2px ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn1 {
+    background-color: red;
+    color: white;
+
+}
+
+.btn2 {
+    background-color: var(--purp300);
+    color: white;
+    align-self: flex-start;
+}
+
+.ipad img {
+    width: 100%;
+    height: auto;
+}
+
+.about_music {
+    padding-top: 500px;
+    display: grid;
+    gap: 50px;
+    place-items: center;
+    text-align: center;
+}
+
+.mac img {
+    width: 1200px;
+    height: auto;
+}
+
+.video_sec {
+    background-image: url(video.jpg);
+    /* width: 100%; */
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+
+.video_sec .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+
+.hero_section,
+.video_sec {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gift_card {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+
+    .giftcard-sec img {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+.gift-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.up {
+    background-color: var(--purp300);
+    padding: 20px;
+}
+
+.up .container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.up h4 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+.low {
+    background-color: var(--purp200);
+    padding: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+@media (max-width:780px) {
+    .hero_section .container {
+
+        gap: 15px;
+
+    }
+
+    .hero_section h1 {
+        font-size: 43px;
+    }
+
+    .hero_section h3 {
+        font-size: 22px;
+    }
+
+    .music_sec .container {
+
+        gap: 30px;
+
+    }
+
+    .ipad {
+        position: relative;
+        /* top: 400px; */
+        /* margin-top: -400px; */
+    }
+}
